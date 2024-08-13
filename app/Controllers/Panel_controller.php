@@ -1,5 +1,5 @@
 <?php
-namespace App\Controller;
+namespace App\Controllers;
 
 use CodeIgniter\Controller;
 class Panel_controller extends Controller
@@ -15,7 +15,7 @@ class Panel_controller extends Controller
         $dato['titulo']='panel';
         echo view('front/head_view', $dato);
         echo view('front/navbar_view');
-        echo view('front/panel', $data);
+        echo view('front/principal', $data);
         echo view('front/footer_view');
 
     }
